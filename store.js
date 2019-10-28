@@ -64,8 +64,9 @@ const STORE = {
 
             ],
             answer:"Speak softly and carry a Big Stick"      
-        }
+        },
     ],
     currentQuestion: 0,
     score:0,
     };
+    console.log(STORE);

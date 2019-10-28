@@ -67,6 +67,5 @@ const STORE = {
         },
     ],
     currentQuestion: 0,
-    score:0,
+    score:0
     };
-    console.log(STORE);

@@ -1,3 +1,9 @@
+/* eslint-disable indent */
+/* eslint-disable no-undef */
+/* eslint-disable quotes */
+'use strict';
+
+
 //start the quiz by clicking the start quiz button
 function startQuiz(){
   $("#start").on('click', function(event){
@@ -18,14 +24,15 @@ function updatesQuestionAndScore(){
 function answerOptions(){
   console.log("answerOptions runs!!");
   let question = STORE.questions[STORE.currentQuestion];
-  for(i =0; i < questions.options.length; i++){
-    $('js-options').append(
-      `input type ="radio name" ="options"
-          id = "options${i+1}" value ="${question.options[i]}"
-          tabindex ="${i + 1}">
+  console.log(question.options[0]);
+  for(let i =0; i < question.options.length; i++){
+    $('.js-options').append(
+      `<input type ="radio" name ="options"
+      id = "options${i+1}" value ="${question.options[i]}"
+      tabindex ="${i + 1}">
           <label for ="option${i+1}"> ${question.options[i]}
           </label> <br/>
-          <span id ="js-r${i+1}</span>
+          <span id ="js-r${i+1}></span>
           `);
   }
 }
@@ -47,7 +54,8 @@ function loadsQuestions(){
 
         <div class ="line options">
          <div class ="context">
-          <div class ="js-options"></div>
+          <div class ="js-options">       
+          </div>
          </div>
         </div>
 

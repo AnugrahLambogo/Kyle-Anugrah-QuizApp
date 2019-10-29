@@ -46,8 +46,8 @@ function loadsQuestions(){
         
      <fieldset>
         <div class="line question">
-         <div class ="context">
-           <legend>${question.question}</legend>
+         <div class ="context"> 
+         <legend>${question.question}</legend>
          </div>
         </div>
 
@@ -107,7 +107,7 @@ function quizResults(){
         </form>
     </div>`);
     $("main").html(testResult);
-    answerOptions();
+   // answerOptions();
     $("#next-question").hide();
       
   }
@@ -148,7 +148,10 @@ function checkAnswer(){
 }
 function restartQuiz(){
     $('body').on('click','#restart', (event) => {
+        STORE.currentQuestion = 0;
+        STORE.score = 0;
         loadsQuestions();
+
     });
 }
 

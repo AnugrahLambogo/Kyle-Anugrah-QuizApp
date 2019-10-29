@@ -3,10 +3,22 @@
     border:0px;
     
   }
+  @media only screen and (min-width:640){
+    body{
+        width: 1000px;
+    }
+    .context{
+    width:100%;
+    }
+}
+@media only screen and (max-width:640){
+    body{
+        width:100%;
+    }
+}
 body{
     font-family: 'Cedarville Cursive', cursive;
     font-size: 30px;
-    width:1000px;
     background-color: tan;
     flex-direction: column;
     text-align: center;
@@ -48,12 +60,4 @@ ul{
 .waving-teddy{
     width:225px;
     border-radius:200px;
-}
-@media only screen and (min-width:640){
-    body{
-        width:100%;
-    }
-    .context{
-    width:100%;
-    }
 }

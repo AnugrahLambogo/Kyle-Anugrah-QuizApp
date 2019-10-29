@@ -24,7 +24,6 @@ function updatesQuestionAndScore(){
 function answerOptions(){
   console.log("answerOptions runs!!");
   let question = STORE.questions[STORE.currentQuestion];
-  console.log(question.options[0]);
   for(let i =0; i < question.options.length; i++){
     $('.js-options').append(
       `<input type ="radio" name ="options"
@@ -32,7 +31,7 @@ function answerOptions(){
       tabindex ="${i + 1}">
           <label for ="option${i+1}"> ${question.options[i]}
           </label> <br/>
-          <span id ="js-r${i+1}></span>
+          <span id ="js-r${i+1}"></span>
           `);
   }
 }
@@ -43,7 +42,7 @@ function loadsQuestions(){
   updatesQuestionAndScore();
   const questionHtml = $(
     `<div>
-        <form id = "teddy-questions" class = "question-form">
+        <form id ="teddy-questions" class = "question-form">
         
      <fieldset>
         <div class="line question">
@@ -115,7 +114,7 @@ function quizResults(){
 //function that checks if the answer is right or wrong
 function checkAnswer(){
   console.log("checkAnswers works!!");
-  $('body').on("submit", '#js-questions', function
+  $('body').on("submit", '#teddy-questions', function
   (event) {
       event.preventDefault();
       let currentQues = STORE.questions
@@ -130,11 +129,11 @@ function checkAnswer(){
       $('span').removeClass("right-answer wrong-answer");
       if(selectedOption === currentQues.answer){
           STORE.score++;
-          $(`${id}`).append(`You made Teddy proud!</br>`);
+          $(`${id}`).append(`</br>You made Teddy proud!</br></br>`);
           $(`${id}`).addClass("right-answer");
       }
       else{
-          $(`${id}`).append('You made Ted mad!');
+          $(`${id}`).append('</br>You made Ted mad!</br></br>');
           $(`${id}`).addClass("wrong-answer");
       }
       STORE.currentQuestion++;

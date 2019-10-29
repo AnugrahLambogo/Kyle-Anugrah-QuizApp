@@ -96,7 +96,8 @@ function quizResults(){
               ${STORE.score}/${STORE.questions.length}</legend>
              </div>
           </div>
-
+            <img src ="https://www.davishighnews.com/wp-content/uploads/2018/11/teddy-roosevelt.jpg"
+            alt="waving Teddy" class="waving-teddy">
           <div class ="line">
            <div class ="context">
             <button type ="button" id ="restart">
@@ -129,11 +130,16 @@ function checkAnswer(){
       $('span').removeClass("right-answer wrong-answer");
       if(selectedOption === currentQues.answer){
           STORE.score++;
-          $(`${id}`).append(`</br>You made Teddy proud!</br></br>`);
+          $(`${id}`).append(`You made Teddy proud!</br><img src = 
+          "https://thumbs-prod.si-cdn.com/lr3fzhaZgdgJwhEML7Dt0sQeIvU=/420x240/https://public-media.si-cdn.com/filer/57/9c/579c64d1-cc6e-40c0-afaa-7bae324e8ac2/theodore-roosevelt-laughing.jpg" alt = 
+          "Teddy's happy face" class="teddy-pic"></br>`);
           $(`${id}`).addClass("right-answer");
       }
       else{
-          $(`${id}`).append('</br>You made Ted mad!</br></br>');
+          $(`${id}`).append(`You made Ted mad!</br>
+          <img src = "https://bigmemes.funnyjunk.com/pictures/Theodore_6f2d03_1721388.jpg"
+          alt ="Mad Teddy" class ="teddy-pic"></br>
+          The correct answer is ${currentQues.answer}</br>`);
           $(`${id}`).addClass("wrong-answer");
       }
       STORE.currentQuestion++;

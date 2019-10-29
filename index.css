@@ -1,13 +1,59 @@
 * {
     box-sizing: border-box;
+    border:0px;
+    
   }
+body{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 30px;
+    width:1000px;
+    background-color: tan;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+button{
+    height:30px;
+    width: 100px;
+    font-style: italic;
+    color:brown;
+    background-color: white;
+}
 
 .hidden {
     display: none;
 }
+.first-picture{
+    width:200px;
+    border-radius: 180px;
+}
+.main{
+    align-items: center;
 
+    
+}
+ul{
+    list-style-type: none;
+}
 .line{
     color: brown;
     align-items: flex-end;
 }
-
+.teddy-pic{
+    width: 150px;
+    border-radius: 75px;
+}
+.waving-teddy{
+    width:225px;
+    border-radius:200px;
+}
+@media only screen and (min-width:640){
+    body{
+        width:100%;
+    }
+    .context{
+    width:100%;
+    }
+}

@@ -1,7 +1,7 @@
 const STORE = {
   questions: [ //question 1
     {
-      question:'When is Teddy Roosevelt\'s Birthday?',
+      question:"When is Teddy Roosevelt's Birthday?",
       options:[
         'October 25, 1845',
         'April 20, 1993',
@@ -44,7 +44,7 @@ const STORE = {
       answer:'teddy bear'       
     },
     {//question 5
-      question:'What two acts was congressional acts was Teddy famous for?',
+      question:'What two congressional acts was Teddy famous for?',
       options:[
         'Civil Rights Act and Civil Housing Act',
         'Prop 8 and Prop 6',
@@ -55,7 +55,7 @@ const STORE = {
       answer:'Pure Food and Drug Act and the Sherman Anti-Trust Act'  
     },
     {//question 6
-      question:'What was the quote Teddy Roosevelt when dealing with foreign politics?',
+      question:'What was the quote Teddy Roosevelt used when dealing with foreign politics?',
       options: [
         'Beat them with a Big Stick',
         'Speak softly and carry a Big Stick',

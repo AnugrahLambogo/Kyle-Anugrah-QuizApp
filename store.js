@@ -19,7 +19,7 @@ const STORE = {
         'He won with the support of his party.'
 
       ],
-      anwser:'He took over after William Mckineley\'s assassination'      
+      answer:'He took over after William Mckineley\'s assassination'      
     },
     {//question 3
       question:'Teddy Roosevelt served in the military during 1896 in what position?',

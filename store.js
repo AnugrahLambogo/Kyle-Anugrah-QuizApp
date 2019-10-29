@@ -1,4 +1,3 @@
-'use strict'
 const STORE = {
   questions: [ //question 1
     {

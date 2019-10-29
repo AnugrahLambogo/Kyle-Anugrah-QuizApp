@@ -1,6 +1,6 @@
 //start the quiz by clicking the start quiz button
 function startQuiz(){
-  $('.start').on('click', function(event){
+  $("#start").on('click', function(event){
     console.log(`startQuiz runs!!`);
     loadsQuestions();
   });

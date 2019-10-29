@@ -6,8 +6,8 @@
     display: none;
 }
 
-.picture{
-    width: 100px;
-    height:100px;
-    border: 0px;
+.line{
+    color: brown;
+    align-items: flex-end;
 }
+
